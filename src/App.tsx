@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import 'leaflet/dist/leaflet.css';
 import './App.css'
 import Supalash from './Components/Features/Overlay/Supalash';
 import { Outlet } from 'react-router-dom';

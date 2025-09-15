@@ -9,6 +9,7 @@ const Navigation: React.FC = () => {
     { label: 'About', href: '/about' },
     { label: 'Tools & Technologies', href: '/techandtools' },
     { label: 'Projects', href: '/projects' },
+    { label: 'Location', href: '/location' },
   ];
 
   return (
