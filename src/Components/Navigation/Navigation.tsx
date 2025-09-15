@@ -12,35 +12,41 @@ const Navigation: React.FC = () => {
   ];
 
   return (
-    <div
-      className="flex flex-col sm:flex-row bg-midGray">
-        <div className="flex flex-row items-center px-4 py-2 border-r-2 border-softWhite">
-            <div className="w-9 pt-1">
-                <Link to="/">
-                    <img src={Logo} alt="Logo" />
-                </Link>
-            </div>
-            <Link to="/" className="text-2xl font-bold text-myOrange">Nines九</Link>
-        </div>
-      {buttons.map(({ label, href }) => {
-        const isActive = location.pathname === href;
-        return (
-          <Link
-            key={label}
-            to={href}
-            className={`
-              font-poppins text-lg sm:text-2xl px-4 py-3 text-center transition-colors duration-300
-              ${isActive 
-                ? 'text-[#FF6B00] font-semibold'
-                : 'text-[#F5F5F5] hover:text-warmAmber'
-              }
-            `}
-          >
-            {label}
+    <nav className="flex flex-col sm:flex-row bg-midGray">
+      {/* Logo + Brand */}
+      <div className="flex flex-row items-center px-4 py-2 sm:border-r-2 border-softWhite">
+        <div className="w-9 pt-1">
+          <Link to="/">
+            <img src={Logo} alt="Logo" />
           </Link>
-        );
-      })}
-    </div>
+        </div>
+        <Link to="/" className="ml-2 text-xl sm:text-2xl font-bold text-myOrange">
+          Nines九
+        </Link>
+      </div>
+
+      {/* Links */}
+      <div className="flex flex-col sm:flex-row">
+        {buttons.map(({ label, href }) => {
+          const isActive = location.pathname === href;
+          return (
+            <Link
+              key={label}
+              to={href}
+              className={`
+                font-poppins text-base sm:text-lg md:text-2xl px-4 py-2 sm:py-3 text-center transition-colors duration-300
+                ${isActive 
+                  ? 'text-[#FF6B00] font-semibold'
+                  : 'text-[#F5F5F5] hover:text-warmAmber'
+                }
+              `}
+            >
+              {label}
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
   );
 };
 
