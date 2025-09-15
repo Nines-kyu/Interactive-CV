@@ -13,7 +13,7 @@ const About: React.FC = () => {
 
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-start">
         <div>
-          <h2 className="text-xl sm:text-2xl font-semibold text-warmAmber mb-4">My Work Experience</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold text-warmAmber mb-4">Work Experience</h2>
           <div className="space-y-4">
             <div className="relative pl-4 sm:pl-6 border-l-2 border-myOrange">
               <h3 className="font-bold">Bachelor in Science in Information Technology</h3>
@@ -49,7 +49,7 @@ const About: React.FC = () => {
 
         <div className="flex flex-col h-full space-y-6 sm:space-y-8">
           <div>
-            <h2 className="text-xl sm:text-2xl font-semibold text-warmAmber mb-4">My Vision</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-warmAmber mb-4">Vision</h2>
             <p className="text-softWhite text-xs sm:text-sm leading-relaxed">
               My goal is to transition fully into software development, focusing on creating 
               efficient, scalable, and user-friendly applications. I want to contribute to impactful 
