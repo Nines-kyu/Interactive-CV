@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Supalash from './Components/Features/Overlay/Supalash';
 import { Outlet } from 'react-router-dom';
+import ProfileSideBar from './Components/ProfileSideBar/ProfileSideBar';
+import Navigation from './Components/Navigation/Navigation';
 
 function App() {
   const [showSplash, setShowSplash] = useState(false);
@@ -11,10 +13,20 @@ function App() {
       {showSplash ? (
         <Supalash onClose={() => setShowSplash(false)}/>
       ) : (
-        <div className='flex flex-col min-h-screen'>
-          <main className='flex flex-grow'>
-            <Outlet />
-          </main>
+        <div className="flex flex-col justify-center min-h-screen bg-deepSeaBlack px-3 sm:px-6">
+          <div className="w-full max-w-[1660px] min-h-[750px] rounded-2xl flex overflow-hidden mx-auto">
+            <div className="w-full lg:w-1/6 bg-midGray items-center justify-center flex flex-col p-3">
+              <ProfileSideBar />
+            </div>
+
+            <div className="w-full lg:w-5/6 flex flex-col">
+              <Navigation />
+
+              <div className="flex-1 flex flex-col">
+                <Outlet />
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </>

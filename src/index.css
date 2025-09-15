@@ -5,4 +5,12 @@
   --font-poppins: "Poppins", "serif";
   --font-retro: "Press Start 2P", system-ui;
   --font-roboto: "Roboto", sans-serif;
+  --color-midnightblue: #1E1E2E;
+  --color-deepSeaBlack: #0D0D0D; /*(main background, hero sections)*/
+  --color-midGray: #1C1C1C; /*(secondary background, cards, navbars)*/
+  --color-vividOrange: #FF6B00; /*(primary accent, buttons, links, highlights)*/
+  --color-warmAmber: #FFB347; /*(secondary accent, hover effects, subtle glows)*/
+  --color-softWhite: #F5F5F5; /*(main text, body content)*/
+  --color-steelGray: #A0A0A0; /*(muted text, captions, secondary info)*/
+  --color-myOrange: #FF914D;
 }
