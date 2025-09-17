@@ -10,12 +10,13 @@ const Navigation: React.FC = () => {
     { label: 'Tools & Technologies', href: '/techandtools' },
     { label: 'Projects', href: '/projects' },
     { label: 'Location', href: '/location' },
+    { label: 'Contact', href: '/contactme' }
   ];
 
   return (
     <nav className="flex flex-col sm:flex-row bg-midGray">
       {/* Logo + Brand */}
-      <div className="flex flex-row items-center px-4 py-2 sm:border-r-2 border-softWhite">
+      <div className="flex flex-row items-center justify-center pr-6 pl-4 sm:px-4 py-2 border-b-2 sm:border-b-0 sm:border-r-2 border-softWhite">
         <div className="w-9 pt-1">
           <Link to="/">
             <img src={Logo} alt="Logo" />
@@ -25,7 +26,6 @@ const Navigation: React.FC = () => {
           Nines九
         </Link>
       </div>
-
       {/* Links */}
       <div className="flex flex-col sm:flex-row">
         {buttons.map(({ label, href }) => {
