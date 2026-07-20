@@ -68,7 +68,9 @@ const ProfileSideBar: React.FC = () => {
         <h3 className="uppercase text-[10px] sm:text-xs tracking-wide font-semibold text-steelGray flex items-center gap-2 mb-1">
           <MdWork className="text-yellow-500" /> Experience
         </h3>
-        <p className="pl-1">IT Staff</p>
+        <p className="pl-1">Technical Consultant, CloudTech ERP</p>
+        <p className="text-[10px] sm:text-xs pl-1 text-[#7A7A7A] mb-2">Nov 2025 – Present</p>
+        <p className="pl-1">IT Staff, Mendoza Tugano & Co, CPAS.</p>
         <p className="text-[10px] sm:text-xs pl-1 text-[#7A7A7A]">June 2024 – Aug 2025</p>
       </div>
 
