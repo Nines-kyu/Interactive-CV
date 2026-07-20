@@ -81,7 +81,7 @@ const ProfileSideBar: React.FC = () => {
           <a href="https://github.com/Nines-kyu" target="_blank" rel="noopener noreferrer">
             <FaGithub className="text-softWhite hover:text-gray-400" />
           </a>
-          <a href="https://www.linkedin.com/in/ivan-christopher-rosca/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/navi-rosca/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-softWhite hover:text-blue-600" />
           </a>
         </div>
