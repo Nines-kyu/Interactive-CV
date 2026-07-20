@@ -1,4 +1,4 @@
-import photo from '../../assets/Navi_Rosca.jpg';
+import photo from '../../assets/Navi_Rosca_formal.jpg';
 
 import {
   FaReact,
