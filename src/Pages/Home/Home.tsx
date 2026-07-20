@@ -1,7 +1,7 @@
 
 const Home: React.FC = () => {
   return (
-    <div className="w-full h-full p-10 flex flex-col items-center justify-center bg-gray-50">
+    <div className="w-full h-full p-6 sm:p-10 flex flex-col items-center justify-center bg-gray-50">
       <h1 className="text-4xl font-extrabold text-gray-900 mb-4 text-center">
         Welcome to My Profile
       </h1>

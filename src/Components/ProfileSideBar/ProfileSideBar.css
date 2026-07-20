@@ -1,23 +1,68 @@
-.profile-avatar {
-  position: relative;
+.splash-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+    background: #fff;
+    z-index: 9999;
 }
 
-.profile-avatar .profile-image {
-  position: absolute;
-  top: 100%;
-  left: 43.5%;
-  transform: translate(-46%, -70%) scale(1.1);
-  transform-origin: center;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  display: block;
+.logo {
+    width: 14rem;
+    cursor: pointer;
+    transition: opacity 1.5s ease;
+    position: relative;
+    z-index: 20;
+}
+
+.logo-spin {
+    animation: spin 1.5s forwards;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.curtain {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100dvh;
+    z-index: 10;
+    transition: transform 1.5s ease;
+    transform: translateX(0);
+}
+
+.curtain-left {
+    left: 0;
+    background-color: #ff914d;
+}
+
+.curtain-right {
+    right: 0;
+    background-color: #000000;
+}
+
+.curtain-left.open {
+    transform: translateX(-100%);
+}
+
+.curtain-right.open{
+    transform: translateX(100%);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(720deg);
+    }
 }
 
 @media (max-width: 640px) {
-  .profile-avatar {
-    width: 6rem;
-    height: 6rem;
-  }
+    .logo { width: 9rem; }
 }
