@@ -1,5 +1,4 @@
 import photo from '../../assets/Navi_Rosca_formal.jpg';
-import './ProfileSideBar.css';
 
 import {
   FaReact,
@@ -40,7 +39,7 @@ const ProfileSideBar: React.FC = () => {
       <p className="text-steelGray text-xs sm:text-sm">Full-Stack Developer</p>
 
       {/* Contact Info */}
-      <div className="mt-3 text-xs sm:text-sm space-y-2 w-full text-left text-softWhite">
+      <div className="mt-3 text-xs sm:text-sm space-y-2 w-full text-left text-softWhite break-words">
         <div className="flex items-center gap-2">
           <MdEmail className="text-vividOrange text-lg" />
           <span>icprosca@gmail.com</span>

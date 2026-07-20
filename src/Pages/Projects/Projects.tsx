@@ -1,4 +1,3 @@
-
 const Projects: React.FC = () => {
     return (
         <div className="p-4 sm:p-8 text-softWhite font-poppins h-full flex flex-col border-r-0 lg:border-r-2 border-b-2 rounded-br-2xl border-gray-50">

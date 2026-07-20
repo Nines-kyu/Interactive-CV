@@ -1,4 +1,3 @@
-
 const Home: React.FC = () => {
   return (
     <div className="w-full h-full p-6 sm:p-10 flex flex-col items-center justify-center bg-gray-50">
