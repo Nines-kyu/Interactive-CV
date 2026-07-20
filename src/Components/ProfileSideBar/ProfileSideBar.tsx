@@ -1,4 +1,5 @@
 import photo from '../../assets/Navi_Rosca_formal.jpg';
+import './ProfileSideBar.css';
 
 import {
   FaReact,
