@@ -29,7 +29,7 @@ const ProfileSideBar: React.FC = () => {
       <div className="w-32 h-32 sm:w-40 sm:h-40 relative rounded-full overflow-hidden border-4 border-myOrange shadow-lg shrink-0">
         <img
           src={photo}
-          alt="Profile"
+          alt=" "
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
