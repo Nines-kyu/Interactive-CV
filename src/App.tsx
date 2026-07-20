@@ -7,12 +7,12 @@ import ProfileSideBar from './Components/ProfileSideBar/ProfileSideBar';
 import Navigation from './Components/Navigation/Navigation';
 
 function App() {
-  const [showSplash, setShowSplash] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
 
   return (
     <>
       {showSplash ? (
-        <Supalash onClose={() => setShowSplash(true)} />
+        <Supalash onClose={() => setShowSplash(false)} />
       ) : (
         <div className="flex flex-col justify-center min-h-dvh bg-deepSeaBlack px-3 sm:px-6 py-4 sm:py-6">
           <div className="w-full max-w-[1660px] lg:max-h-[90dvh] lg:min-h-[750px] rounded-2xl flex flex-col lg:flex-row overflow-hidden mx-auto">
