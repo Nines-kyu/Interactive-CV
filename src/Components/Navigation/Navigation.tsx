@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
         </Link>
       </div>
       {/* Links */}
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap">
         {buttons.map(({ label, href }) => {
           const isActive = location.pathname === href;
           return (
