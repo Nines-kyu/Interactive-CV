@@ -14,7 +14,7 @@ const toolsAndTechnologies = {
 
 const TechAndTools: React.FC = () => {
     return (
-        <section className="w-full h-full py-8 px-4 sm:px-6 border-r-0 lg:border-r-2 border-b-2 rounded-br-2xl border-gray-50">
+        <section className="w-full min-h-full py-8 px-4 sm:px-6 border-r-0 lg:border-r-2 border-b-2 rounded-br-2xl border-gray-50">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">
                 ⚙️ Tools & Technologies
             </h2>

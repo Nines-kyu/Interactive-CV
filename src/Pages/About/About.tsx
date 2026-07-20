@@ -1,7 +1,7 @@
 
 const About: React.FC = () => {
   return (
-    <div className="p-4 sm:p-8 text-softWhite font-poppins h-full flex flex-col border-r-0 lg:border-r-2 border-b-2 rounded-br-2xl border-gray-50">
+    <div className="p-4 sm:p-8 text-softWhite font-poppins min-h-full flex flex-col border-r-0 lg:border-r-2 border-b-2 rounded-br-2xl border-gray-50">
       <div className="flex flex-col mb-6 items-center text-center sm:text-left">
         <h1 className="text-2xl sm:text-3xl font-bold text-myOrange mb-2">Hi, I'm Navi</h1>
         <p className="text-steelGray max-w-2xl text-sm sm:text-base">

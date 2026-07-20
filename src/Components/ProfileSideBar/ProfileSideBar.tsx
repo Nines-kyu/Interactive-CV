@@ -25,7 +25,7 @@ import { MdEmail, MdLocationOn, MdWork, MdSchool } from 'react-icons/md';
 
 const ProfileSideBar: React.FC = () => {
   return (
-    <div className="flex flex-col items-center p-4 w-full h-full bg-[#2B2B2B] shadow-xl rounded-2xl">
+    <div className="flex flex-col items-center p-4 w-full min-h-full bg-[#2B2B2B] shadow-xl rounded-2xl">
       <div className="w-32 h-32 sm:w-40 sm:h-40 relative rounded-full overflow-hidden border-4 border-myOrange shadow-lg shrink-0">
         <img
           src={photo}

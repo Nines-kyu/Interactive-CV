@@ -15,7 +15,7 @@ const Location: React.FC = () => {
   const valenzuelaCoords: [number, number] = [14.694883595446168, 120.97204997435432];
 
   return (
-    <div className="flex flex-col h-full items-center justify-center p-6 border-r-0 lg:border-r-2 border-b-2 rounded-br-2xl border-gray-50">
+    <div className="flex flex-col min-h-full items-center justify-center p-6 border-r-0 lg:border-r-2 border-b-2 rounded-br-2xl border-gray-50">
       <div className="w-full max-w-2xl h-96 rounded-lg shadow-lg overflow-hidden">
         <MapContainer
           center={valenzuelaCoords}
